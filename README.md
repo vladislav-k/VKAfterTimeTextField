@@ -17,7 +17,7 @@ Repo contains two example projects: Objective-C and Swfit.
 Example projects are showing how you can use **VKAfterTimeTextField** with
 
 ## Usage
-### Edit did end notification
+### Editing Did End notification
 The main feature of this control is getting know when user ends editing. Feature mechanism is base on protocol named 'VKAfterTimeTextFieldDelegate'.
 See how setup it and use in the code below:
 
