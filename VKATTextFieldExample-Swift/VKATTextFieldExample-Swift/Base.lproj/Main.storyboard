@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gMV-XH-fq4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wsW-lh-QGw">
+            <objects>
+                <viewController id="gMV-XH-fq4" customClass="ViewController" customModule="VKATTextFieldExample_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HWL-Jp-8Ko"/>
+                        <viewControllerLayoutGuide type="bottom" id="xav-H9-vY0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WYl-Xt-Z01">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After time UITextField demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7m-oz-vE1">
+                                <rect key="frame" x="20" y="40" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zpg-ZP-0Ol"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start edit text field and it will notify you after 1 second once editing done" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofI-uF-OPd">
+                                <rect key="frame" x="20" y="69" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="S2z-7S-YSa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Also it will help you to know when it was edited last time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-X9-Pqd">
+                                <rect key="frame" x="20" y="219" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9VP-0g-mcZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRz-Cs-m9c">
+                                <rect key="frame" x="20" y="287" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="dtd-Db-ibF"/>
+                                    <constraint firstAttribute="height" constant="30" id="uYF-ui-n9t"/>
+                                </constraints>
+                                <state key="normal" title="Check seconds"/>
+                                <connections>
+                                    <action selector="onCheckSeconds:" destination="gMV-XH-fq4" eventType="touchUpInside" id="WT2-1W-lfK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-9N-LJc">
+                                <rect key="frame" x="460" y="287" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DRL-Hl-BuO"/>
+                                    <constraint firstAttribute="width" constant="120" id="Y8e-Jv-FaB"/>
+                                </constraints>
+                                <state key="normal" title="Check time"/>
+                                <connections>
+                                    <action selector="onCheckTime:" destination="gMV-XH-fq4" eventType="touchUpInside" id="agA-tJ-yF0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 seconds ago" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ4-e9-Khd">
+                                <rect key="frame" x="20" y="325" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rPy-a4-ptb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eb-di-ss0" customClass="VKAfterTimeTextField" customModule="VKATTextFieldExample_Swift" customModuleProvider="target">
+                                <rect key="frame" x="175" y="163" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UFj-GT-nmS"/>
+                                    <constraint firstAttribute="width" constant="250" id="tJE-QF-N0N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NDk-X9-Pqd" secondAttribute="trailing" id="0lF-YV-9yE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MLc-9N-LJc" secondAttribute="trailing" id="1nm-91-WoV"/>
+                            <constraint firstItem="ZRz-Cs-m9c" firstAttribute="top" secondItem="NDk-X9-Pqd" secondAttribute="bottom" constant="8" id="4nc-nu-h3V"/>
+                            <constraint firstItem="G7m-oz-vE1" firstAttribute="leading" secondItem="WYl-Xt-Z01" secondAttribute="leadingMargin" id="8Pz-Yc-nEG"/>
+                            <constraint firstItem="2eb-di-ss0" firstAttribute="centerX" secondItem="WYl-Xt-Z01" secondAttribute="centerX" id="9Qu-cD-11y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G7m-oz-vE1" secondAttribute="trailing" id="K0e-Ba-5hL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZRz-Cs-m9c" secondAttribute="leading" id="KTw-Ne-30e"/>
+                            <constraint firstItem="G7m-oz-vE1" firstAttribute="top" secondItem="HWL-Jp-8Ko" secondAttribute="bottom" constant="20" id="Uvr-OQ-hyo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XQ4-e9-Khd" secondAttribute="trailing" id="VZX-aY-B5q"/>
+                            <constraint firstItem="2eb-di-ss0" firstAttribute="top" secondItem="ofI-uF-OPd" secondAttribute="bottom" constant="34" id="WyC-8z-xS1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XQ4-e9-Khd" secondAttribute="leading" id="aho-81-hfc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ofI-uF-OPd" secondAttribute="trailing" id="aoo-4s-AfK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NDk-X9-Pqd" secondAttribute="leading" id="gCt-JN-uYr"/>
+                            <constraint firstItem="ofI-uF-OPd" firstAttribute="top" secondItem="G7m-oz-vE1" secondAttribute="bottom" constant="8" id="hKQ-1C-hoR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ofI-uF-OPd" secondAttribute="leading" id="hvZ-YQ-hKF"/>
+                            <constraint firstItem="NDk-X9-Pqd" firstAttribute="top" secondItem="2eb-di-ss0" secondAttribute="bottom" constant="26" id="s0V-SS-h7i"/>
+                            <constraint firstItem="XQ4-e9-Khd" firstAttribute="top" secondItem="ZRz-Cs-m9c" secondAttribute="bottom" constant="8" id="u3G-mD-zIu"/>
+                            <constraint firstItem="MLc-9N-LJc" firstAttribute="top" secondItem="NDk-X9-Pqd" secondAttribute="bottom" constant="8" id="zXb-Zj-jmF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="afterTimeTextField" destination="2eb-di-ss0" id="YxN-lJ-Jlv"/>
+                        <outlet property="labelTimeAgo" destination="XQ4-e9-Khd" id="9yL-X2-gti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhp-Qh-2iA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="315"/>
+        </scene>
+    </scenes>
+</document>

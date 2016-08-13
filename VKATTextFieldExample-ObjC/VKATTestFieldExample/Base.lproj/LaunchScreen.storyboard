@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="8Bu-gr-zsL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nYf-IG-ITI">
+            <objects>
+                <viewController id="8Bu-gr-zsL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iHf-cZ-6xj"/>
+                        <viewControllerLayoutGuide type="bottom" id="RnB-pa-AIS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mPR-X7-8T4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VKAfterTimeTextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk4-Py-Iae">
+                                <rect key="frame" x="20" y="264.5" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GNK-mA-H9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objective-C: Example app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhr-GC-FZL">
+                                <rect key="frame" x="20" y="294.5" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="yLj-II-cMw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/vladislav-k/VKAfterTimeTextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-4D-ftZ">
+                                <rect key="frame" x="162" y="559" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Cn8-2N-uu4"/>
+                                    <constraint firstAttribute="height" constant="21" id="IiO-fe-sgO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_github" translatesAutoresizingMaskIntoConstraints="NO" id="hkj-pU-CDb">
+                                <rect key="frame" x="138" y="557.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="fWZ-Cc-C9H"/>
+                                    <constraint firstAttribute="height" constant="24" id="pgd-la-MNH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yk4-Py-Iae" firstAttribute="centerY" secondItem="mPR-X7-8T4" secondAttribute="centerY" constant="-20" id="0OE-Gp-EI5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rhr-GC-FZL" secondAttribute="trailing" id="7df-eB-98Q"/>
+                            <constraint firstItem="rhr-GC-FZL" firstAttribute="top" secondItem="yk4-Py-Iae" secondAttribute="bottom" id="CtK-sz-IDp"/>
+                            <constraint firstItem="hkj-pU-CDb" firstAttribute="centerY" secondItem="TAd-4D-ftZ" secondAttribute="centerY" id="H8U-lZ-JTJ"/>
+                            <constraint firstItem="TAd-4D-ftZ" firstAttribute="centerX" secondItem="mPR-X7-8T4" secondAttribute="centerX" constant="12" id="UFe-67-G7j"/>
+                            <constraint firstItem="rhr-GC-FZL" firstAttribute="leading" secondItem="mPR-X7-8T4" secondAttribute="leadingMargin" id="UKf-jv-D2G"/>
+                            <constraint firstItem="TAd-4D-ftZ" firstAttribute="leading" secondItem="hkj-pU-CDb" secondAttribute="trailing" id="f2M-bk-YjN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yk4-Py-Iae" secondAttribute="trailing" id="lE3-fR-sn7"/>
+                            <constraint firstItem="RnB-pa-AIS" firstAttribute="top" secondItem="TAd-4D-ftZ" secondAttribute="bottom" constant="20" id="mVK-Rf-7jR"/>
+                            <constraint firstItem="yk4-Py-Iae" firstAttribute="leading" secondItem="mPR-X7-8T4" secondAttribute="leadingMargin" id="xES-qg-fJS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBn-Ts-OCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_github" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r25-wb-mZ2" customClass="VKAfterTimeTextField">
+                                <rect key="frame" x="175" y="163" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VqZ-eL-A2K"/>
+                                    <constraint firstAttribute="width" constant="250" id="cDR-yG-PIT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After time UITextField demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTL-SU-sd1">
+                                <rect key="frame" x="20" y="40" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZWX-0b-aPr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start edit text field and it will notify you after 1 second once editing done" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q06-sF-TBm">
+                                <rect key="frame" x="20" y="69" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SIk-cI-hB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Also it will help you to know when it was edited last time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDV-HM-BVt">
+                                <rect key="frame" x="20" y="219" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="U8U-AC-tAp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVk-kw-bQl">
+                                <rect key="frame" x="20" y="287" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EKL-u1-Xvk"/>
+                                    <constraint firstAttribute="width" constant="120" id="Wim-QQ-9kQ"/>
+                                </constraints>
+                                <state key="normal" title="Check seconds"/>
+                                <connections>
+                                    <action selector="buttonCheckSeconds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="218-qE-pr5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xso-Qz-oP1">
+                                <rect key="frame" x="460" y="287" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OLe-hl-MBd"/>
+                                    <constraint firstAttribute="width" constant="120" id="kUL-QF-y0q"/>
+                                </constraints>
+                                <state key="normal" title="Check time"/>
+                                <connections>
+                                    <action selector="buttonCheckTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lye-M8-WyF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 seconds ago" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ft-5m-7nr">
+                                <rect key="frame" x="20" y="325" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="43E-ub-lTE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="rVk-kw-bQl" secondAttribute="leading" id="32q-h6-hXC"/>
+                            <constraint firstItem="Q06-sF-TBm" firstAttribute="top" secondItem="RTL-SU-sd1" secondAttribute="bottom" constant="8" id="7Dw-Qn-paE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Q06-sF-TBm" secondAttribute="leading" id="7G5-Y5-2Oe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9ft-5m-7nr" secondAttribute="leading" id="AwH-Hr-6JU"/>
+                            <constraint firstItem="r25-wb-mZ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLc-e6-V4v"/>
+                            <constraint firstItem="Xso-Qz-oP1" firstAttribute="top" secondItem="bDV-HM-BVt" secondAttribute="bottom" constant="8" id="G8l-kL-is7"/>
+                            <constraint firstItem="RTL-SU-sd1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IHh-Zq-des"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDV-HM-BVt" secondAttribute="trailing" id="Mxc-vt-e48"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RTL-SU-sd1" secondAttribute="trailing" id="O46-sD-KPC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bDV-HM-BVt" secondAttribute="leading" id="U7o-SG-FO8"/>
+                            <constraint firstItem="r25-wb-mZ2" firstAttribute="top" secondItem="Q06-sF-TBm" secondAttribute="bottom" constant="34" id="aRv-2p-50s"/>
+                            <constraint firstItem="rVk-kw-bQl" firstAttribute="top" secondItem="bDV-HM-BVt" secondAttribute="bottom" constant="8" id="brw-db-uTd"/>
+                            <constraint firstItem="9ft-5m-7nr" firstAttribute="top" secondItem="rVk-kw-bQl" secondAttribute="bottom" constant="8" id="btY-3P-q3f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xso-Qz-oP1" secondAttribute="trailing" id="fIb-Cm-BmA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ft-5m-7nr" secondAttribute="trailing" id="iel-RY-i5o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q06-sF-TBm" secondAttribute="trailing" id="kBr-A2-uO8"/>
+                            <constraint firstItem="bDV-HM-BVt" firstAttribute="top" secondItem="r25-wb-mZ2" secondAttribute="bottom" constant="26" id="w3F-Al-SPX"/>
+                            <constraint firstItem="RTL-SU-sd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yYO-pM-0qE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="afterTimeTextField" destination="r25-wb-mZ2" id="q8z-AU-nyQ"/>
+                        <outlet property="labelTimeAgo" destination="9ft-5m-7nr" id="D0R-Aw-LbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="315"/>
+        </scene>
+    </scenes>
+</document>
